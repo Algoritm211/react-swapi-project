@@ -1,0 +1,20 @@
+.error-indicator {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: orange;
+}
+
+.error-indicator img {
+    padding: 1rem;
+}
+
+.error-indicator img:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.error-indicator .boom {
+    font-size: 2rem;
+}
