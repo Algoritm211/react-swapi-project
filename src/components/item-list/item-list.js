@@ -1,9 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import './item-list.css'
-import Spinner from '../spinner'
-import SwapiService from '../../services/swapi-service'
-import { withData } from '../hoc-helper'
+
 
 
 
@@ -31,6 +30,16 @@ const ItemList = (props) => {
         </ul>
 
     )
+}
+
+ItemList.defaultProps = {
+    onItemSelected: () => {}
+}
+
+ItemList.propTypes = {
+    onItemSelected: PropTypes.func,
+    data: PropTypes.arrayOf(PropTypes.object).isRequired,
+    children: PropTypes.func
 }
 
 

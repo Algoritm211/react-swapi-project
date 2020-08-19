@@ -1,5 +1,4 @@
 import React from 'react'
-import { SwapiServiceConsumer } from '../swapi-service-context/swapi-service-context'
 import ItemDetails from '../item-details'
 import { Record } from '../item-details/item-details'
 import { withSwapiService } from '../hoc-helper'
@@ -23,4 +22,4 @@ const mapMethodsToProps = (swapiService) => {
     }
 }
 
-export default withSwapiService(StarshipDetails, mapMethodsToProps)
+export default withSwapiService(mapMethodsToProps)(StarshipDetails)
